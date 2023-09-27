@@ -6,7 +6,9 @@
 }
 
 body{
-    background-image: linear-gradient(#222222,#141414,#131313,#121212);
+    background-image: linear-gradient(#222222,#151515,#141414,#131313,#121212 ,#111111, white);
+    width: 100%;
+    height: 100vh;
 }
 .flex{
     display: flex;
@@ -14,15 +16,21 @@ body{
 
 #sidemenu{
     background-color: #000000;
-    width: 240px;
-    height: 800px;
     margin-left: 14px; 
     color: white;
 } 
 
 p{
     color: white;}
-
+#grey-border{
+    border: 1px solid #282828;
+    background-color: #282828;
+    width: 185px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 3px;
+}
 #logo{
     margin: 26px 0 29px 25px;
     width: 130px;
@@ -32,10 +40,15 @@ p{
 .small-icon{
     width: 10px;
     height: 10px;
-    padding: 8px;
+    padding: 5px 0 0 10px;
+    position: absolute;
+    z-index: 1;
 }
 .align2{
-    padding-top: 10px;
+    padding: 10px 0 0 25px;
+}
+.align2>div{
+    padding: 8px 0;
 }
 .align2>div>p{
     padding-left: 20px;
@@ -79,6 +92,11 @@ padding: 7px;
     margin-left: 5px;
 }
 
+#heart{
+    position: absolute;
+    left: 260px;
+    top: 165px;
+}
 #top-arrow{
     width:80px;
     height: 30px;
@@ -167,5 +185,75 @@ padding: 7px;
     margin: 20px 30px 0 0px;
 }
 
+.black-section>h3{
+    padding-top: 10px;
+    font-size: medium;
+}
+
+.black-section>p{
+    padding-top: 10px;
+    font-size: small;
+    opacity: 0.6;
+   
+}
+footer{
+    position: fixed;
+    width: 100%;
+}
+#music-bar{
+    height: 77px;
+    background-color: #181818;
+    color: white;
+
+}
+
+#playing-song{
+    width: 60px;
+    height: 60px;
+    margin: 10px 0 0 20px ;
+}
+#song-name>h5{
+    padding: 20px 0 0 20px;
+}
+#song-name>p{
+    padding:5px 0 0 20px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+#green-heart{
+    width: 20px;
+    height: 20px;
+    margin: 30px 0 0 20px;
+}
+
+#music-player{
+    height: 50px;
+    width: 510px;
+    padding: 10px 0 0 30px;
+}
+
+.flex4{
+    display: flex;
+    justify-content: space-between;
+}
+#right-option{
+    padding: 35px 50px 0 0;
+    height: 30px;
+    width: 240px;
+}
+
+#text>p{
+    padding-left: 1220px;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    padding-top: 2px;
+}
+#text{
+    background-color: #1ED760;
+    height: 30px;
+    border-bottom:#1ED760;
+}
 
 
