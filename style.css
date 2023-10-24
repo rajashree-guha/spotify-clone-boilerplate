@@ -3,16 +3,23 @@
     margin: 0;
     padding: 0;
     font-family: 'DM Sans', sans-serif;
-    overflow: hidden;
 }
 
 body{
     background-image: linear-gradient(#222222,#151515,#141414,#131313,#121212 , white);
     width: 100%;
-    height: 100vh;
+
 }
 .flex{
     display: flex;
+}
+
+.flex5{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 #sidemenu{
@@ -148,6 +155,7 @@ padding: 7px;
 #playlist-top{
     padding-top: 30px;
     color:white;
+    width: 1300px;
 }
 
 .playlist-img{
@@ -155,7 +163,7 @@ padding: 7px;
     height: 80px;
 }
 
-.grey1{
+.grey{
     border:1px solid #303030;
     width: 300px;
     background-color: #303030;
@@ -163,17 +171,8 @@ padding: 7px;
     border-radius: 5px ;
 }
 
-.grey1>p ,.grey2>p{
+.grey>p {
     padding: 30px 0 0 20px;
-}
-
-.grey2{
-    border:1px solid #303030;
-    width: 300px;
-    height: 80px;
-    background-color: #303030;
-    margin: 20px 10px 0 10px;
-    border-radius: 5px;
 }
 
 #shows-section{
@@ -207,9 +206,9 @@ padding: 7px;
    
 }
 footer{
-    position: fixed;
+    position: absolute;
+    bottom: -3%;
     width: 100%;
-    margin-top: -15px;
 
 }
 
@@ -227,6 +226,7 @@ footer{
 }
 #song-name>h5{
     padding: 20px 0 0 20px;
+    
 }
 #song-name>p{
     padding:5px 0 0 20px;
@@ -246,6 +246,7 @@ footer{
     padding: 10px 0 0 30px;
 }
 
+
 .flex4{
     display: flex;
     justify-content: space-between;
@@ -263,10 +264,136 @@ footer{
     font-weight: bold;
     padding-top: 2px;
 }
+
 #text{
     background-color: #1ED760;
     height: 30px;
     border-bottom:#1ED760;
+}
+
+
+@media screen and (max-width:480px){
+    #sidemenu{
+        display: none;
+    }
+
+    #home-page{
+        padding-left: 3%;
+    }
+    #top-arrow{
+        display: none;
+    }
+    
+    .flex1{
+        justify-content: flex-end;
+        width: 350px;
+
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,180px);
+    }
+    
+    body{
+        width: 100%;
+        height: 100%;
+       
+    }
+    #playlist-top{
+        width: 300px;
+    }
+
+    #heart{
+        position: absolute;
+        left: 28px;
+        top: 152px;
+        width: 20px;
+    }
+    .playlist-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .grey>p {
+        padding: 15px 0 0 10px;
+        width: 130px;
+    }
+    .grey{
+        width: 170px;
+        height: 50px; 
+     }
+
+     .grid1{
+        display: grid;
+        grid-template-columns: repeat(2,180px); 
+     }
+
+     .align-item>p{
+        padding: 5px 0 0 10px;
+     }
+
+     #music-player{
+        height: 30px;
+        width: 200px;
+        padding: 13% 0 0 30px;
+    }
+
+    #right-option{
+        padding: 50px 10px 0 5px;
+        height: 10px;
+        width: 80px;
+    }
+     
+    #shows-section{
+        padding-bottom: 105px;
+    }
+
+    .shows-img{
+        width: 140px;
+        height: 140px;
+    }
+    
+    .black-section{
+        width: 145px;
+    }
+    footer{
+      position: fixed;
+      top: 83%;
+    }
+
+    #playing-song{
+        width: 40px;
+        height: 40px;
+        margin: 10px 0 5px 10px ;
+    }
+
+    .flex5{
+        display: flex;
+        flex-wrap: wrap; 
+        width: 50px;
+    } 
+
+    #text{
+        height: 30px;
+        width: 100%;
+    }
+
+    #song-name>h5{
+        padding: 3px 0 0 10px;
+        font-size: 10px;
+        width: 80px;
+    }
+    #song-name>p{
+        padding:5px 0 0 10px;
+        font-size: 8px;
+    }
+
+    #text>p{
+       padding-left: 230px;
+       font-size: 8px;
+    }
+
+
 }
 
 
